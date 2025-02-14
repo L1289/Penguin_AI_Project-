@@ -36,7 +36,7 @@ namespace NodeCanvas.Tasks.Actions {
 			fishSpawnerPos = new Vector3(fishSpawner.position.x, fishSpawner.position.y, fishSpawner.position.z);
 		    if (Input.GetKeyDown("space"))
 			{
-				
+				Debug.Log("Summon Fish");
             }
 
         }
