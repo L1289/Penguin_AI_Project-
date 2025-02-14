@@ -227,6 +227,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1375769889
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1655269004640974881, guid: 51d7fd40bdb0cb4418f2d64264fdc2e5, type: 3}
+      propertyPath: m_Name
+      value: Fish Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 7975660859513374384, guid: 51d7fd40bdb0cb4418f2d64264fdc2e5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.075
+      objectReference: {fileID: 0}
+    - target: {fileID: 7975660859513374384, guid: 51d7fd40bdb0cb4418f2d64264fdc2e5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.601
+      objectReference: {fileID: 0}
+    - target: {fileID: 7975660859513374384, guid: 51d7fd40bdb0cb4418f2d64264fdc2e5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.288
+      objectReference: {fileID: 0}
+    - target: {fileID: 7975660859513374384, guid: 51d7fd40bdb0cb4418f2d64264fdc2e5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7975660859513374384, guid: 51d7fd40bdb0cb4418f2d64264fdc2e5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7975660859513374384, guid: 51d7fd40bdb0cb4418f2d64264fdc2e5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7975660859513374384, guid: 51d7fd40bdb0cb4418f2d64264fdc2e5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7975660859513374384, guid: 51d7fd40bdb0cb4418f2d64264fdc2e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7975660859513374384, guid: 51d7fd40bdb0cb4418f2d64264fdc2e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7975660859513374384, guid: 51d7fd40bdb0cb4418f2d64264fdc2e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 51d7fd40bdb0cb4418f2d64264fdc2e5, type: 3}
 --- !u!1 &1708645401
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,6 +579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food Barrel
       objectReference: {fileID: 0}
+    - target: {fileID: 6003297056032616390, guid: 88c032f343c8dc34e8fb6c55104e4b71, type: 3}
+      propertyPath: m_Name
+      value: Fish Spawner
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -536,3 +597,4 @@ SceneRoots:
   - {fileID: 162219654}
   - {fileID: 3026086601102529951}
   - {fileID: 2059548661363444156}
+  - {fileID: 1375769889}
