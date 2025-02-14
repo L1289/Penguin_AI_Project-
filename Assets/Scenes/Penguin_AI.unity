@@ -579,6 +579,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6720897371974136280, guid: 577c463b43dacbf46bb91c878625a6a6, type: 3}
+      propertyPath: _serializedBlackboard
+      value: '{"_variables":{}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6720897371974136280, guid: 577c463b43dacbf46bb91c878625a6a6, type: 3}
+      propertyPath: _serializedVariables.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6720897371974136280, guid: 577c463b43dacbf46bb91c878625a6a6, type: 3}
+      propertyPath: _serializedVariables.Array.data[0]._json
+      value: '{"_name":"myObject","_id":"63841c02-1e61-4662-bc96-65623bdb1a9c","$type":"NodeCanvas.Framework.Variable`1[[System.Object,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

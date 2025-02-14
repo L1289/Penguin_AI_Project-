@@ -13,6 +13,7 @@ namespace NodeCanvas.Tasks.Actions {
         public BBParameter <Vector3> targetPosition;
 		public BBParameter <float> hungerBar;
         public BBParameter <float> targetDistance;
+		public BBParameter<float> lowHunger;
 
 		public Transform hungerWaypoint;
 
@@ -31,8 +32,8 @@ namespace NodeCanvas.Tasks.Actions {
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
 
-
-            if (hungerBar.value <= 10f)
+			//Setting Target to restore hungerbar if the penguin hunger is low enough
+            if (hungerBar.value <= lowHunger.value)
 			{
 				//The direction the penguin is moving in for hunger
 				Vector3 directionToHungerBar = hungerWaypoint.position - agent.transform.position;
@@ -43,6 +44,7 @@ namespace NodeCanvas.Tasks.Actions {
 				//Setting Target to restore hungerbar
 				targetPosition.value = hungerbarTarget;
 
+				//setting the target distance
 				targetDistance.value = hungerbarTarget.x + hungerbarTarget.y + hungerbarTarget.z;
 
                 EndAction(true);
