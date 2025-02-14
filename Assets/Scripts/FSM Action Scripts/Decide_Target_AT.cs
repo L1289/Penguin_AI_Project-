@@ -1,14 +1,18 @@
 using NodeCanvas.Framework;
 using ParadoxNotion.Design;
 using UnityEngine;
-
+using System.Collections;
+using static UnityEngine.UIElements.UxmlAttributeDescription;
+using NodeCanvas.Editor;
+using UnityEditor;
+using UnityEngine.AI;
 namespace NodeCanvas.Tasks.Actions {
 
 	public class Decide_Target_AT : ActionTask {
 
         public BBParameter <Vector3> targetPosition;
 		public BBParameter <float> hungerBar;
-        public BBParameter<float> targetDistance;
+        public BBParameter <float> targetDistance;
 
 		public Transform hungerWaypoint;
 
@@ -27,10 +31,8 @@ namespace NodeCanvas.Tasks.Actions {
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
 
-			float currentHungerBar = hungerBar;
 
-
-            if (currentHungerBar <= 10f)
+            if (hungerBar.value <= 10f)
 			{
 				//The direction the penguin is moving in for hunger
 				Vector3 directionToHungerBar = hungerWaypoint.position - agent.transform.position;
@@ -41,9 +43,9 @@ namespace NodeCanvas.Tasks.Actions {
 				//Setting Target to restore hungerbar
 				targetPosition.value = hungerbarTarget;
 
-				targetDistance = hungerbarTarget.x + hungerbarTarget.y + hungerbarTarget.z;
+				targetDistance.value = hungerbarTarget.x + hungerbarTarget.y + hungerbarTarget.z;
 
-				EndAction(true);
+                EndAction(true);
 
             }
         }
