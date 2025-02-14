@@ -43,6 +43,8 @@ namespace NodeCanvas.Tasks.Actions
             if (Input.GetKeyDown("space"))
             {
                 Debug.Log("Summon Fish");
+
+                //GameObject.Instantiate(fish, fishSpawner);
             }
 
         }
