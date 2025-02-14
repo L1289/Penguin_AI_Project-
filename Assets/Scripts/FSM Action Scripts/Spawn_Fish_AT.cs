@@ -6,6 +6,7 @@ using static UnityEngine.UIElements.UxmlAttributeDescription;
 using NodeCanvas.Editor;
 using UnityEditor;
 using UnityEngine.AI;
+using Unity.VisualScripting;
 
 namespace NodeCanvas.Tasks.Actions
 {
@@ -17,7 +18,8 @@ namespace NodeCanvas.Tasks.Actions
 
         public Transform fishSpawner;
 
-        private Vector3 fishSpawnerPos;
+        private Vector3 fishSpawnPos;
+
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
@@ -37,14 +39,13 @@ namespace NodeCanvas.Tasks.Actions
         //Called once per frame while the action is active.
         protected override void OnUpdate()
         {
-
-            fishSpawnerPos = new Vector3(fishSpawner.position.x, fishSpawner.position.y, fishSpawner.position.z);
+            fishSpawnPos = new Vector3(fishSpawner.position.x, 2f, fishSpawner.position.z);
 
             if (Input.GetKeyDown("space"))
             {
                 Debug.Log("Summon Fish");
 
-                //GameObject.Instantiate(fish, fishSpawner);
+                GameObject.Instantiate(fish, fishSpawnPos, Quaternion.identity);
             }
 
         }
